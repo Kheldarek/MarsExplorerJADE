@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox fx:controller="gui.SurvivingMarsGui" xmlns:fx="http://javafx.com/fxml">
+    <children>
+        <ToolBar>
+            <items>
+                <CheckBox fx:id="stepByStep" onAction="#switchMode">Step Mode</CheckBox>
+                <Button fx:id="nextStep" onAction="#executeOneStep">Next Step</Button>
+            </items>
+        </ToolBar>
+        <Canvas fx:id="canvas" width="500.0" height="500.0"/>
+        <ToolBar>
+            <items>
+                <VBox>
+                    <Label>Rover</Label>
+                    <Label fx:id="roverSamples"></Label>
+                    <Label fx:id="roverPos"></Label>
+                    <Label fx:id="roverNoSampleFor"></Label>
+                </VBox>
+                <VBox>
+                    <Label>Curiosity</Label>
+                    <Label fx:id="curiosityMode"></Label>
+                    <Label fx:id="curiosityPosition"></Label>
+                    <Label fx:id="curiosityHasSample"></Label>
+                    <Label fx:id="curiosityCrumbs"></Label>
+
+                </VBox>
+                <VBox>
+                    <Label>Opportunity</Label>
+                    <Label fx:id="opportunityMode"></Label>
+                    <Label fx:id="opportunityPosition"></Label>
+                    <Label fx:id="opportunityHasSample"></Label>
+                    <Label fx:id="opportunityCrumbs"></Label>
+                </VBox>
+                <VBox>
+                    <Label>Spirit</Label>
+                    <Label fx:id="spiritMode"></Label>
+                    <Label fx:id="spiritPosition"></Label>
+                    <Label fx:id="spiritHasSample"></Label>
+                    <Label fx:id="spiritCrumbs"></Label>
+                </VBox>
+                <VBox>
+                    <Label>Map</Label>
+                    <Label fx:id="samplesLeft"></Label>
+                </VBox>
+            </items>
+        </ToolBar>
+    </children>
+</VBox>
